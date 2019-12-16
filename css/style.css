@@ -1811,11 +1811,6 @@ ul {
   }
 }
 
-.footer {
-  -webkit-box-shadow: 0px 0px 25px 0px black;
-          box-shadow: 0px 0px 25px 0px black;
-}
-
 .footer_wrap {
   background: rgba(39, 174, 96, 0.5);
   z-index: 999;
