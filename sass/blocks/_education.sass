@@ -1,0 +1,66 @@
+.education
+    &_wrap
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1)
+        padding-bottom: 50px
+        padding-top: 25px
+        background: #ecf0f1
+    &_wrap_title
+        padding-top: 25px
+        border-top: 1px dashed rgba(127, 140, 141, 0.5)
+        color: #0c0c0c
+        position: relative
+        margin-bottom: 25px
+        font-size: 32px
+        +thin 
+        text-transform: uppercase
+        text-align: center
+        transition: 2s ease
+    &_wrap_title:hover 
+        color: #f1c40f
+        transition: 0.5s ease
+    &_wrap_content_subtitle
+        text-transform: uppercase
+        color: #0c0c0c
+        font-size: 24px
+        +ultralight
+        text-align: center
+        line-height: 30px
+    &_wrap_graduation
+        margin-bottom: 35px
+        text-align: center
+        position: relative
+        color: #f1c40f
+    &_wrap_li_subtitle
+        margin-top: 20px
+        position: relative 
+        color: #0c0c0c
+    &_wrap_li_subtitle::before 
+        top: 0 
+        width: 15% 
+        left: 50%
+        transform: translate(-50%, -10px) 
+        position: absolute
+        background: rgba(44, 62, 80, 0.3)
+        height: 2px 
+        border-radius: 25px
+        content: ''
+    &_wrap_ul 
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        margin-top: 25px
+    &_wrap_li 
+        color: #f1c40f
+        margin: 0 50px
+        min-height: 70px
+        list-style: square
+    &_wrap_li_span
+        color: #0c0c0c
+        +thin 
+        letter-spacing: 1px
+        text-transform: uppercase
+        font-size: 18px
+    &_wrap_content_build
+        margin-top: 20px
+        text-align: center

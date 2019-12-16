@@ -1,0 +1,75 @@
+.footer
+    box-shadow: 0px 0px 25px 0px black
+    
+    &_wrap
+        background: rgba(39, 174, 96, 0.5)
+        z-index: 999
+        position: relative
+    &_wrap_title 
+        text-align: center
+        position: relative 
+        padding-top: 25px
+    &_wrap_subtitle
+        border-bottom: 1px dashed rgba(127, 140, 141, 0.5)
+        position: relative
+        padding: 0
+        text-align: center
+    &_wrap_subtitle_p
+        position: relative
+        text-transform: uppercase 
+        font-size: 24px 
+        +ultralight 
+        padding: 0
+        color: rgb(236, 240, 241)
+        letter-spacing: 1px 
+        margin-top: 25px
+    &_wrap_title::before 
+        height: 2px 
+        width: 50px 
+        position: absolute 
+        top: 70%
+        transform: translate(-55px, -50%)
+        content: ''
+        background: rgba(236, 240, 241, 0.8)
+    &_wrap_title::after 
+        height: 2px 
+        width: 50px 
+        position: absolute 
+        top: 70%
+        //transform-origin: center left
+        transform: translate(5px, -50%)
+        content: ''
+        background: rgba(236, 240, 241, 0.8)
+    &_wrap_site
+        animation: bounce 2s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite
+    &_wrap_site_link
+        background: rgba(44, 62, 80, 0.8)
+        border-radius: 20px 
+        +ultralight 
+        text-transform: uppercase 
+        font-size: 24px
+        letter-spacing: 1px 
+        color: rgb(236, 240, 241)
+        text-decoration: none
+        padding: 0 10px
+    &_footer 
+        background: rgb(44, 62, 80)
+        text-align: center 
+        text-transform: uppercase 
+        font-size: 16px
+        color: rgb(236, 240, 241) 
+        +thin
+        padding: 10px 0
+        letter-spacing: 1.5px
+
+#footer_navbar
+    background: rgba(39, 174, 96, 0.5)
+    box-shadow: none
+    border-bottom: 1px dashed rgba(127, 140, 141, 0.5) 
+
+@keyframes bounce 
+    from, to
+        transform: translateY(-2px)
+    80%
+        transform: translateY(-5px)
+    

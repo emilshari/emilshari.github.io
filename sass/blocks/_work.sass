@@ -1,0 +1,67 @@
+.work
+    &_wrap
+        padding-bottom: 50px
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1)
+        border-bottom: 1px dashed rgba(127, 140, 141, 0.5)
+        padding-top: 25px
+        background: #ecf0f1
+    &_wrap_experience_occupation_title
+        color: #0c0c0c
+        font-size: 24px
+        +ultralight
+        text-align: center
+        line-height: 30px
+    &_wrap_experience 
+        padding-top: 25px
+        border-top: 1px dashed rgba(127, 140, 141, 0.5)
+        color: #0c0c0c
+        position: relative
+        margin-bottom: 25px
+        font-size: 32px
+        +thin 
+        text-transform: uppercase
+        text-align: center
+        transition: 2s ease
+    &_wrap_experience:hover 
+        transition: 0.5s ease
+        color: #f1c40f
+    &_wrap_experience_chrono
+        animation: splend 5s linear infinite
+        color: #0c0c0c
+        text-align: center 
+        +thin
+        font-size: 24px 
+        letter-spacing: 2px
+        text-transform: uppercase
+    &_wrap_experience_occupation_li
+        +regular
+        text-transform: uppercase
+        letter-spacing: 2px
+        padding-bottom: 20px 
+        margin: 0 50px
+        min-height: 50px
+        color: #f1c40f
+    &_wrap_experience_occupation_ul 
+        margin-top: 30px
+        display: grid 
+        justify-content: center 
+        align-items: center
+        color: #0c0c0c
+    &_wrap_experience_occupation_span
+        font-size: 14px
+        color: #0c0c0c
+    &_wrap_experience_occupation_logo
+        background: url('../img/upwork.svg') no-repeat center
+        background-size: cover 
+        margin: 0 auto
+        width: 256px 
+        height: 76.5px
+        transition: 2s ease
+
+@keyframes splend 
+    0%
+        transform: translateY(0)
+    50% 
+        transform: translateY(5px)
+    100% 
+        transform: translateY(0)
