@@ -507,6 +507,40 @@ ul {
           animation: bounce 1.5s ease infinite;
 }
 
+.fa-address-card {
+  color: #f1c40f;
+}
+
+.cover_letter_wrap_main_cover_letter_title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cover_letter_wrap_main_cover_letter_title::before {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: #f1c40f;
+  content: '';
+  top: 50%;
+  -webkit-transform: translate(-105%, -50%);
+          transform: translate(-105%, -50%);
+}
+
+.cover_letter_wrap_main_cover_letter_title::after {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: #f1c40f;
+  content: '';
+  top: 50%;
+  -webkit-transform: translate(5%, -50%);
+          transform: translate(5%, -50%);
+}
+
 .star {
   margin-bottom: 25px;
   position: relative;
@@ -2113,6 +2147,546 @@ ul {
   height: 3px;
   opacity: 0.8;
   background: #ecf0f1;
+}
+
+.header_cover_letter_wrap_title {
+  position: relative;
+}
+
+.header_cover_letter_wrap_title_button {
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20px);
+          transform: translate(-50%, -20px);
+  z-index: 99;
+  content: '';
+  cursor: pointer;
+  background: #2c3e50;
+  font-family: 'San Francisco Pro Display Regular';
+  color: #f1c40f;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: 24px;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: transparent;
+  -webkit-animation: button_move 3s ease infinite;
+          animation: button_move 3s ease infinite;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.header_cover_letter_wrap_title_button:hover {
+  color: #ecf0f1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.header_cover_letter_wrap_title_button_active {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.header_cover_active {
+  -webkit-transform: translateX(-3000px) scale(0);
+          transform: translateX(-3000px) scale(0);
+  position: absolute;
+  height: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.main_cover_active {
+  -webkit-transform: translateX(-3000px) scale(0);
+          transform: translateX(-3000px) scale(0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  position: absolute;
+  height: 0;
+}
+
+.corner_right_active {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  height: 0;
+}
+
+#cover_writing {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: 'San Francisco Pro Display Thin';
+  text-transform: none;
+}
+
+.links_button_cover_active {
+  left: -100%;
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.span_cover_active {
+  -webkit-transform: translateX(-3000px) scale(0);
+          transform: translateX(-3000px) scale(0);
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.cover_letter_signature {
+  text-decoration: none;
+  color: #2c3e50;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  font-family: 'San Francisco Pro Display Regular';
+  position: relative;
+}
+
+.cover_letter_signature::before {
+  position: absolute;
+  content: '';
+  background: #f1c40f;
+  width: 100%;
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+  height: 2px;
+  bottom: 0;
+}
+
+.cover_letter_signature:hover {
+  color: #f1c40f;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cover_letter_wrap_main_address_title_geo_sigma {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.cover_letter_wrap_main_cover_letter_writing {
+  text-transform: capitalize;
+  font-family: 'San Francisco Pro Display Thin';
+  width: 90%;
+  letter-spacing: 2px;
+}
+
+.cover_letter_wrap_main_cover_letter_name {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'San Francisco Pro Display Thin';
+  letter-spacing: 2px;
+  border-top: 1px dashed rgba(44, 62, 80, 0.5);
+}
+
+.cover_letter_wrap_main_address_employer_name {
+  margin-top: 30px;
+  font-family: 'San Francisco Pro Display Light';
+  letter-spacing: 3px;
+  fonts-size: 28px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cover_letter_wrap_main_address_employer_name:hover {
+  color: #f1c40f;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cover_letter_wrap_main_address_employer_name::before {
+  position: absolute;
+  content: '';
+  background: #f1c40f;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(50px, -18px);
+          transform: translate(50px, -18px);
+  width: 100px;
+  height: 2px;
+}
+
+.cover_letter_wrap_main_address_employer_company {
+  margin-bottom: 60px;
+  font-style: normal;
+  position: relative;
+}
+
+.cover_letter_wrap_main_address_employer {
+  margin-left: 60px;
+  font-family: 'San Francisco Pro Display Thin';
+  padding-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.cover_letter_wrap_main_address_employer::before {
+  bottom: 10%;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-size: 12px 12px;
+  background-position: -5px -3px;
+  background-image: radial-gradient(circle at 50% 0%, rgba(44, 62, 80, 0.5) 50%, transparent 55%);
+}
+
+.cover_letter_wrap_main_cover_letter {
+  padding-top: 30px;
+}
+
+.cover_letter_wrap_main_address_title {
+  padding-top: 10px;
+  background: #0c0c0c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.cover_letter_wrap_main_address_title_mail_sigma {
+  margin-bottom: 10px;
+}
+
+.cover_letter_wrap_main_address_title_geo {
+  margin-bottom: 10px;
+  font-family: 'San Francisco Pro Display Thin';
+  letter-spacing: 2px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: relative;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.cover_letter_wrap_main_address_title_telephone_sigma {
+  margin-bottom: 10px;
+}
+
+.cover_letter_wrap_main_address_title_geo:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #f1c40f;
+}
+
+.cover_letter_wrap_main_address_title_geo::before {
+  border-radius: 10px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #f1c40f;
+  bottom: 0;
+  -webkit-transform: translateY(3px) scale(0);
+          transform: translateY(3px) scale(0);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.cover_letter_wrap_main_address_title_geo:hover::before {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: translateY(3px) scale(1);
+          transform: translateY(3px) scale(1);
+}
+
+.cover_letter_wrap_main_address_title_mail {
+  margin-bottom: 10px;
+  font-family: 'San Francisco Pro Display Thin';
+  letter-spacing: 2px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: relative;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.cover_letter_wrap_main_address_title_mail:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #f1c40f;
+}
+
+.cover_letter_wrap_main_address_title_mail::before {
+  border-radius: 10px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #f1c40f;
+  bottom: 0;
+  -webkit-transform: translateY(3px) scale(0);
+          transform: translateY(3px) scale(0);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.cover_letter_wrap_main_address_title_mail:hover::before {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: translateY(3px) scale(1);
+          transform: translateY(3px) scale(1);
+}
+
+.cover_letter_wrap_main_address_title_telephone {
+  margin-bottom: 10px;
+  font-family: 'San Francisco Pro Display Thin';
+  letter-spacing: 2px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: relative;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.cover_letter_wrap_main_address_title_telephone:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #f1c40f;
+}
+
+.cover_letter_wrap_main_address_title_telephone::before {
+  border-radius: 10px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #f1c40f;
+  bottom: 0;
+  -webkit-transform: translateY(3px) scale(0);
+          transform: translateY(3px) scale(0);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.cover_letter_wrap_main_address_title_telephone:hover::before {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: translateY(3px) scale(1);
+          transform: translateY(3px) scale(1);
+}
+
+.cover_letter_wrap_main_cover_letter {
+  background: #ecf0f1;
+}
+
+.cover_letter_title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  color: #ecf0f1;
+  font-family: 'San Francisco Pro Display Ultra Light';
+  letter-spacing: 2px;
+}
+
+.cover_letter_title::before {
+  position: absolute;
+  bottom: 0;
+  width: 6%;
+  content: '';
+  left: 50%;
+  -webkit-transform: translate(-50%, 10px);
+          transform: translate(-50%, 10px);
+  height: 2px;
+  background: rgba(236, 240, 241, 0.6);
+}
+
+.cover_letter_wrap_subtitle {
+  position: relative;
+  font-size: 24px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #f1c40f;
+  font-family: 'San Francisco Pro Display Regular';
+  letter-spacing: 2px;
+  border-bottom: 1px dashed rgba(236, 240, 241, 0.5);
+}
+
+.cover_letter_wrap {
+  position: relative;
+  padding-top: 35px;
+  -webkit-box-shadow: 0px 0px 25px black;
+          box-shadow: 0px 0px 25px black;
+  background: #2f3542;
+  overflow: hidden;
+}
+
+.cover_letter_wrap::after {
+  position: absolute;
+  content: '';
+  background: rgba(241, 196, 15, 0.4);
+  width: 300px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(-45deg) translate(100px, 20px);
+          transform: rotate(-45deg) translate(100px, 20px);
+}
+
+.cover_letter_wrap::before {
+  position: absolute;
+  content: '';
+  background: rgba(241, 196, 15, 0.9);
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 20%;
+}
+
+.cover_letter_button {
+  text-align: center;
+}
+
+.cover_letter_button_return {
+  z-index: 999;
+  width: 290px;
+  position: absolute;
+  -webkit-animation: button_move 4s ease infinite;
+          animation: button_move 4s ease infinite;
+  -webkit-box-shadow: 0px 0px 25px black;
+          box-shadow: 0px 0px 25px black;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  background: #2c3e50;
+  color: #f1c40f;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 20px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.cover_letter_button_return:hover {
+  color: #ecf0f1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cover_letter {
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: translateY(-3000px) scale(0);
+          transform: translateY(-3000px) scale(0);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.cover_letter_active {
+  position: relative;
+  opacity: 1;
+  -webkit-transform: translateY(0px) scale(1);
+          transform: translateY(0px) scale(1);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#between {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: rgba(44, 62, 80, 0.2);
+  content: '';
+  border-radius: 20px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+@-webkit-keyframes button_move {
+  from, to {
+    -webkit-transform: translate(-50%, -20px);
+            transform: translate(-50%, -20px);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -30px);
+            transform: translate(-50%, -30px);
+  }
+}
+
+@keyframes button_move {
+  from, to {
+    -webkit-transform: translate(-50%, -20px);
+            transform: translate(-50%, -20px);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -30px);
+            transform: translate(-50%, -30px);
+  }
+}
+
+@media (max-width: 968px) {
+  .header_cover_letter_wrap_title_button {
+    font-family: 'San Francisco Pro Display Regular';
+    -webkit-transform: translate(-50%, -60px);
+            transform: translate(-50%, -60px);
+    -webkit-animation: button_move 3s ease infinite;
+            animation: button_move 3s ease infinite;
+  }
+}
+
+@-webkit-keyframes button_move_small {
+  from, to {
+    -webkit-transform: translate(-50%, -30px);
+            transform: translate(-50%, -30px);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50px);
+            transform: translate(-50%, -50px);
+  }
+}
+
+@keyframes button_move_small {
+  from, to {
+    -webkit-transform: translate(-50%, -30px);
+            transform: translate(-50%, -30px);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50px);
+            transform: translate(-50%, -50px);
+  }
+}
+
+@media (max-width: 868px) {
+  .header_cover_letter_wrap_title_button {
+    width: 240px;
+    font-size: 20px;
+    -webkit-animation: none;
+            animation: none;
+    font-family: 'San Francisco Pro Display Regular';
+    -webkit-transform: translate(-50%, -60px);
+            transform: translate(-50%, -60px);
+    -webkit-animation: button_move_small 3s ease infinite;
+            animation: button_move_small 3s ease infinite;
+  }
 }
 
 .personal_wrap {
