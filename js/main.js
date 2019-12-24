@@ -88,6 +88,8 @@ function scrollSlow(id) {
         $('.header').removeClass('header_active');
         $('.main').removeClass('main_active');
         $('.footer').removeClass('footer_active');
+        $('.header_cover_letter_wrap_title_button').removeClass('header_cover_letter_wrap_title_button_active');
+
     });
     $('.menu_navbar_wrap_li').on('click', function() {
         $('.menu_navbar_wrap').removeClass('menu_navbar_wrap_active');
@@ -97,6 +99,7 @@ function scrollSlow(id) {
         $('.header').removeClass('header_active');
         $('.main').removeClass('main_active');
         $('.footer').removeClass('footer_active');
+        $('.header_cover_letter_wrap_title_button').removeClass('header_cover_letter_wrap_title_button_active');
     });
 
  const link = document.getElementById('link_button');
