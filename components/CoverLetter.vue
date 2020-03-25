@@ -1,0 +1,434 @@
+<template>
+  <div class="cover_letter">
+               <div class="container">
+                   <!-- /.cover_letter_button_return -->
+                   <div class="cover_letter_wrap">
+                        <div class="cover_letter_wrap_main">
+                            <!-- /.cover_letter_wrap_main_address -->
+                            <div class="cover_letter_wrap_main_cover_letter">
+                                <h3 class="cover_letter_wrap_main_cover_letter_name">Cover Letter</h3>
+                                <!-- /.cover_letter_wrap_main_cover_letter_name -->
+                                <div class="cover_letter_wrap_main_cover_letter_title">
+                                    <i class="fas fa-address-card fa-2x"></i>
+                                </div>
+                                <div class="cover_letter_wrap_main_address_employer">
+                                    <!-- /.cover_letter_wrap_main_address_employer_name -->
+                              
+                                    <div class="cover_letter_wrap_main_cover_letter_writing">
+                                      <br> <p id ="cover_writing">
+                                            I have found your job suggestion and I would like to collaborate with your company as a Junior Web Developer position,  cause this an offer makes me indeed excited and interested.<br> <br>
+                                            <span id="between"></span>
+                                            Accordingly to job requirements, I have sufficient experience in the Web Development, including more front-end promotions, because my first own way been started from static HTML5, CSS3. I'm actively developing myself currently, I'm keeping to study the programmings like a JavaScript (EcmaSript) and his framework React.js, studying a Back-End as well (MySql, PHP, Ajax-forms). <br>
+                                            <br>
+                                            <span id="between"></span>
+                                            I also have an little experience in the Freelance (UpWork) and I'm still keeping to do it, it's related with layout design development, implementing in the pure coding part and committing to localhost server for check it out accurately.It has taught me customer interactions, deadlines of projects, always be responsible and service-focused, and the most important for me is finding the best solutions for employer. <br>
+                                            <br> 
+                                            <span id="between"></span>
+                                            The Junior Web Developer position is really attracting towards me,  I really believe that my keen and strong experience, vast education in the web programming is making me a hugely competitive for it. <br><br>
+                                            <span id="between"></span>
+                                            My programming skills are building according to these features: <br>
+                                            I'm continually striving to the excellent of code writing and reach an ideal and perfect result for employer conditions.
+                                            <br>
+                                            I am confident working with your company as a Web Developer to implement functional enhancements, develop and maintain of the existing company websites, collaborate and coordinate with your product manager, devs and designers.
+                                            <br><br>
+                                            <span id="between"></span>
+                                            I can be reached anytime via e-mail at emil.shari87@gmail.com <br> <br>
+                                            Thank you for your time and consideration! <br> I indeed appreciate it so much! <br> I'm looking forward to receive your feedback as soon as possible. <br> <br>
+                                            Best regards and sincerest wishes, <br> <br>
+                                            <a href="http://emilshari.github.io" rel="nofollow" class="cover_letter_signature">Emil Shari (Junior Web Developer). </a> <!-- /.cover_letter_signature -->
+                                            <!-- /.cover_writing_features -->
+                                        </p> <!-- /. -->
+                                    </div>
+                                    <!-- /.cover_letter_wrap_main_address_employer -->
+                                </div>
+                                <!-- /.cover_letter_wrap_main_address_employer -->
+                            </div>
+                            <!-- /.cover_letter_wrap_main_cover_letter -->
+                        </div>
+                        <!-- /.cover_letter_wrap_main -->
+                   </div>
+                   <!-- /.cover_letter_wrap -->
+               </div>
+               <!-- /.container -->
+           </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="sass" >
+@mixin ultralight 
+    font-family: 'San Francisco Pro Display Ultra Light'
+
+
+@mixin regular 
+    font-family: 'San Francisco Pro Display Regular'
+
+
+@mixin light 
+    font-family: 'San Francisco Pro Display Light'
+
+
+@mixin heavy 
+    font-family: 'San Francisco Pro Display Heavy'
+
+
+@mixin thin 
+    font-family: 'San Francisco Pro Display Thin'
+
+
+.header
+    &_cover_letter_wrap_title
+        position: relative
+        //text-align: center
+        //left: 50%
+    &_cover_letter_wrap_title_button
+        text-align: center
+        text-decoration: none
+        //position: relative
+        left: 50%
+        transform: translate(-50%, -20px)
+        z-index: 99
+        //left: 50%
+        content: ''
+        cursor: pointer
+        background: rgba(44, 62, 80,10.9)
+        +regular
+        color: rgba(241, 196, 15,1.0)
+        box-shadow: 0px 0px 25px rgba(0, 0,0, 0.5)
+        text-transform: uppercase 
+        font-size: 24px
+        outline: none
+        padding: 5px 20px 
+        border-radius: 20px
+        border: transparent
+        animation: button_move 3s ease infinite
+        transition: 1s ease
+    &_cover_letter_wrap_title_button:hover 
+        color: rgba(236, 240, 241,1.0)
+        transition: 0.3s ease
+    &_cover_letter_wrap_title_button_active 
+        visibility: hidden
+        position: relative 
+        opacity: 0
+        //transition: 1s ease
+
+
+.main
+    &_cover_active 
+        transform: translateX(-3000px) scale(0)
+        transform-origin: top left 
+        opacity: 0
+        transition: 1s ease
+        position: relative 
+        height: 0
+
+.corner_right_active
+    transform: scale(0)
+    position: relative 
+    height: 0
+
+.footer
+    &_cover_active 
+        //transform: translateX(-3000px) scale(0)
+        //transform-origin: top left 
+        //opacity: 0
+        //transition: 1s ease
+        //position: relative 
+        //height: 0
+
+#cover_writing 
+    font-size: 24px 
+    letter-spacing: 2px 
+    +thin
+    text-transform: none
+.links_button_cover_active
+    left: -100%
+    opacity: 0 
+    transition: 1s ease
+
+.span_cover_active
+    transform: translateX(-3000px) scale(0)
+    opacity: 0 
+    transition: 1s ease
+
+.cover
+    &_letter_signature
+        text-decoration: none 
+        //text-transform: uppercase
+        color: rgba(44, 62, 80,1.0)
+        transition: 1s ease
+        +regular
+        position: relative
+    &_letter_signature::before
+        position: absolute
+        content: ''
+        background: rgba(241, 196, 15,1.0)
+        width: 100%
+        transform: translateY(14px) 
+        height: 2px 
+        bottom: 0
+    &_letter_signature:hover 
+        color: rgba(241, 196, 15,1.0) 
+        transition: 0.3s ease
+    &_letter_wrap_main_address_title_geo_sigma
+        margin-bottom: 10px
+        margin-left: 30px
+    &_letter_wrap_main_cover_letter_writing
+        text-transform: capitalize
+        +thin
+        width: 90%
+        letter-spacing: 2px
+    &_letter_wrap_main_cover_letter_name
+        font-size: 32px 
+        text-align: center
+        padding-top: 20px
+        margin-bottom: 20px
+        +thin 
+        letter-spacing: 2px 
+        border-top: 1px dashed rgba(44, 62, 80,.5)
+    &_letter_wrap_main_address_employer_name
+        margin-top: 30px
+        +light
+        letter-spacing: 3px 
+        fonts-size: 28px
+        transition: 1s ease
+        margin-bottom: 10px
+        position: relative
+    &_letter_wrap_main_address_employer_name:hover 
+        color: rgba(241, 196, 15,1.0)
+        transition: 0.3s ease
+    &_letter_wrap_main_address_employer_name::before 
+        position: absolute
+        content: ''
+        background: rgba(241, 196, 15,1.0)
+        top: 0
+        left: 0
+        transform: translate(50px, -18px)
+        width: 100px 
+        height: 2px
+    &_letter_wrap_main_address_employer_company
+        margin-bottom: 60px
+        font-style: normal
+        position: relative
+    &_letter_wrap_main_address_employer 
+        //position: relative
+        //border-bottom: 1px dashed rgba(44, 62, 80,.5)
+        margin-left: 60px
+        +thin 
+        padding-bottom: 20px
+        font-size: 24px 
+        text-transform: uppercase
+    &_letter_wrap_main_address_employer::before 
+        bottom: 10%
+        transform: rotate(-180deg)
+        position: absolute
+        content: ''
+        height: 8px
+        width: 100% 
+        left: 0
+        bottom: 0
+        background-size: 12px 12px
+        background-position: -5px -3px
+        background-image: radial-gradient(circle at 50% 0%, rgba(44, 62, 80,.5) 50%, transparent 55%)
+        //background: rgba(44, 62, 80,.5) 
+    &_letter_wrap_main_cover_letter
+        padding-top: 30px
+
+    &_letter_wrap_main_address_title
+        padding-top: 10px 
+        background: #0c0c0c
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        align-items: center
+        flex-basis: 33.33%
+    &_letter_wrap_main_address_title_mail_sigma
+        margin-bottom: 10px
+    &_letter_wrap_main_address_title_geo
+        margin-bottom: 10px
+        +thin
+        letter-spacing: 2px
+        transition: .5s ease
+        position: relative
+        color: #ffffff
+        margin-left: 10px
+    &_letter_wrap_main_address_title_telephone_sigma
+        margin-bottom: 10px
+    &_letter_wrap_main_address_title_geo:hover
+        transition: .5s ease
+        color: #f1c40f
+    &_letter_wrap_main_address_title_geo::before
+        border-radius: 10px
+        position: absolute
+        content: ''
+        width: 100% 
+        height: 1px 
+        background: #f1c40f
+        bottom: 0
+        transform: translateY(3px) scale(0)
+        transition: .5s ease
+    &_letter_wrap_main_address_title_geo:hover::before
+        transition: .5s ease
+        transform: translateY(3px) scale(1) 
+    &_letter_wrap_main_address_title_mail
+        margin-bottom: 10px
+        +thin
+        letter-spacing: 2px
+        transition: .5s ease
+        position: relative
+        color: #ffffff
+        margin-left: 10px
+    &_letter_wrap_main_address_title_mail:hover 
+        transition: .5s ease
+        color: #f1c40f
+    &_letter_wrap_main_address_title_mail::before
+        border-radius: 10px
+        position: absolute
+        content: ''
+        width: 100% 
+        height: 1px 
+        background: #f1c40f
+        bottom: 0
+        transform: translateY(3px) scale(0)
+        transition: .5s ease
+    &_letter_wrap_main_address_title_mail:hover::before
+        transition: .5s ease
+        transform: translateY(3px) scale(1) 
+    &_letter_wrap_main_address_title_telephone
+        margin-bottom: 10px
+        +thin
+        letter-spacing: 2px
+        transition: .5s ease
+        position: relative
+        color: #ffffff
+        margin-left: 10px
+    &_letter_wrap_main_address_title_telephone:hover 
+        transition: .5s ease
+        color: #f1c40f
+    &_letter_wrap_main_address_title_telephone::before
+        border-radius: 10px
+        position: absolute
+        content: ''
+        width: 100% 
+        height: 1px 
+        background: #f1c40f
+        bottom: 0
+        transform: translateY(3px) scale(0)
+        transition: .5s ease
+    &_letter_wrap_main_address_title_telephone:hover::before 
+        transition: .5s ease
+        transform: translateY(3px) scale(1) 
+    &_letter_wrap_main_cover_letter
+        background: rgba(236, 240, 241,1.0)
+    &_letter_title
+        position: relative
+        text-transform: uppercase 
+        font-size: 32px
+        text-align: center
+        color: rgba(236, 240, 241,1.0)
+        +ultralight 
+        letter-spacing: 2px
+    &_letter_title::before 
+        position: absolute
+        bottom: 0 
+        width: 6% 
+        content: ''
+        left: 50% 
+        transform: translate(-50%, 10px)
+        height: 2px 
+        background: rgba(236, 240, 241,.6)
+    &_letter_wrap_subtitle
+        position: relative
+        font-size: 24px
+        margin-top: 20px
+        padding-bottom: 20px
+        text-align: center
+        color: rgba(241, 196, 15,1.0)
+        +regular
+        letter-spacing: 2px
+        border-bottom: 1px dashed rgba(236, 240, 241,.5)
+    &_letter_wrap
+        position: relative
+        //margin-left: 20px
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 1)
+        background: #2f3542
+        overflow: hidden 
+    &_letter_wrap::after 
+        position: absolute
+        content: ''
+        background: rgba(241, 196, 15,.4)
+        width: 300px
+        height: 50px
+        bottom: 0
+        right: 0
+        transform: rotate(-45deg) translate( 100px, 20px)
+    &_letter_button
+        text-align: center
+    &_letter_button_return
+        z-index: 999
+        width: 290px
+        position: relative
+        animation: button_move 4s ease infinite
+        box-shadow: 0px 0px 25px rgba(0, 0,0, 1.0)
+        text-transform: uppercase 
+        padding: 5px 20px 
+        background: rgba(44, 62, 80,1.0) 
+        color: rgba(241, 196, 15,1.0) 
+        text-decoration: none
+        font-size: 24px
+        border-radius: 20px
+        transition: 1s ease
+    &_letter_button_return:hover
+        color: rgba(236, 240, 241,1.0)
+        transition: 0.3s ease
+    &_letter_active
+        //margin-bottom: 75px
+        position: relative
+        opacity: 1
+        transform: translateY(0px) scale(1)
+        transition: 1s ease
+        
+    
+#between
+    position: relative 
+    width: 50px 
+    height: 2px 
+    background: rgba(44, 62, 80,.2) 
+    content: ''
+    border-radius: 20px 
+    transform: translateY(-15px)
+@keyframes button_move 
+    from, to
+        transform: translate(-50%, -20px)
+    80% 
+        transform: translate(-50%, -30px)
+
+@media (max-width: 968px)
+    .header
+        &_cover_letter_wrap_title_button
+            +regular
+            transform: translate(-50%, -60px)
+            animation: button_move 3s ease infinite
+
+@keyframes button_move_small 
+    from, to
+        transform: translate(-50%, -30px)
+    80% 
+        transform: translate(-50%, -50px)
+
+@media (max-width: 868px)
+    .header
+        &_cover_letter_wrap_title_button
+            width: 240px
+            font-size: 20px
+            animation: none
+            +regular
+            transform: translate(-50%, -60px)
+            animation: button_move_small 3s ease infinite
+
+
+</style>

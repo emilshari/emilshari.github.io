@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'San Francisco Pro Display Regular';
+    src: url('../fonts/SFProDisplay-Regular.eot');
+        src: url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display Light';
+    src: url('../fonts/SFProDisplay-Light.eot');
+    src: url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Light.woff') format('woff'),
+    url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display Thin';
+    src: url('../fonts/SFProDisplay-Thin.eot');
+    src: url('../fonts/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Thin.woff') format('woff'),
+    url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display Heavy';
+    src: url('../fonts/SFProDisplay-Heavy.eot');
+    src: url('../fonts/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Heavy.woff') format('woff'),
+    url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro Display Ultra Light';
+    src: url('../fonts/SFProDisplay-Ultralight.eot');
+    src: url('../fonts/SFProDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-Ultralight.woff') format('woff'),
+    url('../fonts/SFProDisplay-Ultralight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin ultralight {
+    font-family: 'San Francisco Pro Display Ultra Light';
+}
+
+@mixin regular {
+    font-family: 'San Francisco Pro Display Regular';
+}
+
+@mixin light {
+    font-family: 'San Francisco Pro Display Light';
+}
+
+@mixin heavy {
+    font-family: 'San Francisco Pro Display Heavy';
+}
+
+@mixin thin {
+    font-family: 'San Francisco Pro Display Thin';
+}
